@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuMa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body onload="disTodo()">
+    <nav class="navbar navbar-expand navbar-transparent">
+        <div class="container d-flex justify-content-end" >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./porto.html">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Todos</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <section class="vh-200">
+        <div class="container">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="card" id="list" style="border-radius: .75rem; background-color: white-space;">
+                    <hr class="card-body py-4 px-4 px-md-5">
+                        <p class="h1 text-center mt-3 mb-4 pb-3 ">
+                            <u>My Todo</u>
+                        </p>
+
+                        <div class="card pb-2">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center">
+                                    <input type="text" class="form-control form-control-lg" id="tambah" placeholder="masukkan baru...">
+                                    <button type="button" class="btn btn-primary" onclick="submitTodo()">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4"></hr>
+
+                        <div id="todo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
